@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link href="css/Style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="Script.js"></script>
+    <meta charset="UTF-8">
+    <title> Apps Moviles </title>
+  </head>
+  <body>
+  <header id="header">
+      <div class="imgh1">
+        <a href="index.html"><img id="imagen" src="utnlogo.jpg" alt="logo"></a>
+      <br>
+
+      <h1> Flor de Jardin </h1>
+    </div>
+      <div class="wrapper">
+      <nav>
+
+        <a href="flores-plantas.html" id="a1">Flores y plantas</a>
+
+        <a href="Decoracion.html" id="a2">Decoracion</a>
+
+        <a href="Muebles.html" id="a3">Muebles</a>
+
+        <a href="juegos.html" id="a4">Juegos</a>
+
+        <a href="encuesta.html" id="a5">Encuesta</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+    <section>
+	     <form id="fomulario">
+          <p>Nombre: <input type="text" pattern="^[A-Za-z]{1,50}$" name="Nombre" id="Nom"></p>
+          <p>Apellido: <input type="text" pattern="^[A-Za-z]{1,50}$" name="Apellido" id="Ape"></p>
+          <p>Fecha de Nacimiento: <input type="date" name="Fecha" id="Fdn"></p>
+		      <p>Sexo: <input type="radio" name="sexo" value="Hombre" id="Sexo"> Hombre
+                   <input type="radio" name="sexo" value="Mujer"  id="Sexo">  Mujer</p>
+          <P>Valoracion: <input type="radio" name="Valoracion" value="Lamentable" id="Val"> Lamentable
+		                     <input type="radio" name="Valoracion" value="Mala"  id="Val">  Mala
+						             <input type="radio" name="Valoracion" value="Podria ser mejor" id="Val"> Podria ser mejor
+		                     <input type="radio" name="Valoracion" value="Buena"  id="Val">  Buena
+		                     <input type="radio" name="Valoracion" value="Me encanto"  id="Val">  Me encantó</p>
+		      <p>Comentarios: <textarea  name="textArea" rows="5" cols="40" id="Com"></textarea></p>
+          <input type="submit" onclick="validarForm()">
+          <input type="button" value="Cancelar" onclick="Cancel()">
+          <input type="reset">
+        </form>
+     </section>
+	 <aside>
+	</aside>
+	 </main>
+  <footer> Aplicaciones moviles 22/08/2018 </footer>
+   </body>
+</html>

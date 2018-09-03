@@ -1,0 +1,169 @@
+body {
+  width: 100%;
+  height: 100%;
+}
+header {
+  width:100%;
+  clear: right;
+  height: 10%;
+  background-color: rgb(88,134,226);
+  text-align: center;
+  font-size: 100%;
+}
+main {
+  height: 80%;
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  }
+header nav {
+ clear: left;
+ line-height:70px;
+ height: 25%;
+ background-color: rgb(88,134,226);;
+ text-align: center;
+   }
+header nav a:hover{
+  background:#f56f3a;
+  border-radius:50px;
+}
+img{
+   height:150px;
+   width: 200px;
+  }
+section {
+  background-color: blue;
+  width: 70%;
+  height: 100%;
+  text-align: left;
+  font-size: 100%;
+  float: left;
+  overflow: hidden;
+  }
+  aside {
+  width:30%;
+  float:right ;
+  background-color: blue;
+  overflow: hidden;
+  display: block;
+  }
+table {
+  text-align: center;
+  font-size: 90%;
+  font-weight: bold;
+  display: block;
+  }
+footer {
+  clear: left;
+  height: 10%;
+  text-align: right;
+  font-size:100%;
+  background-color: rgb(189, 189, 189);
+  }
+header #imagen{
+  float: left;
+  height: 120px;
+  width: 10%;
+  margin-top:2%;
+  margin-left:3%;
+
+
+  }
+  nav a{
+    margin-left: 5%;
+    font-size:25px;
+    border: 1px solid red;
+    padding:2%;
+    text-decoration: none;
+    background-color: rgb(10, 78, 141);
+    color:white;
+   }
+
+   .wrapper{
+     max-width:1000px;
+     margin:auto;
+     overflow:hidden;
+   }
+
+
+   @media screen and (max-width: 520px){
+
+     header nav,
+     header h1
+     {
+       width:100%;
+       text-align: center;
+       line-height:70px;
+     }
+   }
+
+   @media screen and (max-width: 520px){
+    header #imagen
+
+    {
+      width:100%;
+      text-align: center;
+      line-height:120px;
+      margin:auto;
+    }
+  }
+
+
+
+  @media screen and (max-width: 360px){
+    header .wrapper nav a1,
+    header .wrapper nav a2,
+    header .wrapper nav a3,
+    header .wrapper nav a4,
+    header .wrapper nav a5
+    {
+      width:100%;
+      text-align: center;
+      line-height:30px;
+      border-radius:5%;
+      font-size:40px;
+    }
+  }
+
+  @media screen and (max-width: 360px){
+    .galleryconten{
+      text-align: center;
+    }
+  }
+
+.titulos{
+
+  text-align: center;
+}
+
+.galleryconten{
+  width:100%;
+  height: auto;
+
+   display:block;
+   position:relative;
+   overflow: auto;
+}
+
+div.gallery {
+      width:50%;
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: 150px;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
