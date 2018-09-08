@@ -1,4 +1,4 @@
-window.onload = function() {
+/*window.onload = function() {
 	window.parent.document.getElementById('total').innerHTML =" Precio por articulo: $50 <br><br>Total:$0" ; }
 
 var cacheProductos=[];
@@ -113,3 +113,21 @@ var map;
 function geolocalizame(){
 navigator.geolocation.getCurrentPosition(pedirPosicion);
  }
+ 
+  $(document).ready(function(){
+	 $("#res").click(function(){
+ $("#mensaje").hiden(); })})		 
+
+ 
+ */
+ 
+ $(document).ready(function(){
+
+  $("#mensaje").hide();
+ });
+ 
+ $(document).ready(function(){
+	 $("#enviar").click(function(){
+ $("#mensaje").show(1);
+   setTimeout(function() {
+ $("#mensaje").hide();},5000);})})

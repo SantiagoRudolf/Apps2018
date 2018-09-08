@@ -2,7 +2,9 @@
 <html>
   <head>
     <link href="css/Style.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="Script.js"></script>
+<script  src="jquery-3.3.1.min.js"></script>
+<script  src="jquery-3.3.1.js"></script> 
+<script src="Script.js"></script>
     <meta charset="UTF-8">
     <title> Apps Moviles </title>
   </head>
@@ -43,9 +45,10 @@
 		                     <input type="radio" name="Valoracion" value="Buena"  id="Val">  Buena
 		                     <input type="radio" name="Valoracion" value="Me encanto"  id="Val">  Me encantó</p>
 		      <p>Comentarios: <textarea  name="textArea" rows="5" cols="40" id="Com"></textarea></p>
-          <input type="submit" onclick="validarForm()">
+          <input type="button"  value="Enviar" id="enviar" onclick="validarForm()">
           <input type="button" value="Cancelar" onclick="Cancel()">
-          <input type="reset">
+          <input type="reset" id="res">
+		  <div id="mensaje"> <h2>Gracias por completar la encuesta<h2></div>
         </form>
      </section>
 	 <aside>
