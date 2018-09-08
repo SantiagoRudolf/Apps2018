@@ -88,3 +88,28 @@ function validarForm()
    } alert('Nombre: ' + Nom + '\n' + 'Apellido: ' + Ape + '\n' +  'Nacimiento: ' + Fecha + '\n' +  'Sexo: ' + sexo + '\n' +  'Valoracion: ' + Val);
 
 }
+
+
+var map;
+ 
+ function initialize() {
+   var punto = new google.maps.LatLng( -34.906377299999996, -57.925213899999996); //ubicación Flor de jardin
+   var myOptions = {
+     zoom: 18, 
+     center: punto,
+   }
+     map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+ }
+  
+ 
+  
+ function pedirPosicion(pos) {
+   var centro = new google.maps.LatLng(pos.coords.latitude,pos.coords.longitude);
+   map.setCenter(centro); 
+   map.setMapTypeId(google.maps.MapTypeId.ROADMAP); 
+  alert("¡Hola! Estas en : "+pos.coords.latitude+ ","+pos.coords.longitude+" Rango de localización de +/- "+pos.coords.accuracy+" metros");
+}
+ 
+function geolocalizame(){
+navigator.geolocation.getCurrentPosition(pedirPosicion);
+ }
