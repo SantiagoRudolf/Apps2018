@@ -1,59 +1,52 @@
 <!DOCTYPE HTML>
 <html>
-  <head>
-    <link href="css/Style.css" rel="stylesheet" type="text/css">
-<script  src="jquery-3.3.1.min.js"></script>
-<script  src="jquery-3.3.1.js"></script> 
-<script src="Script.js"></script>
-    <meta charset="UTF-8">
-    <title> Apps Moviles </title>
-  </head>
-  <body>
+<head>
+  <link href="css/Style.css" rel="stylesheet" type="text/css">
+  <script  src="jquery-3.3.1.min.js"></script>
+  <script  src="jquery-3.3.1.js"></script>
+  <script src="Script.js"></script>
+  <meta charset="UTF-8">
+  <title> Apps Moviles </title>
+</head>
+<body>
   <header id="header">
-      <div class="imgh1">
-        <a href="index.html"><img id="imagen" src="utnlogo.jpg" alt="logo"></a>
-      <br>
-
-      <h1> Flor de Jardin </h1>
+    <div class="imgh1">
+      <a href="index.html"><img id="imagen" src="utnlogo.jpg" alt="logo"></a>
+      <br><h1> Flor de Jardin </h1>
     </div>
-      <div class="wrapper">
+    <div class="wrapper">
       <nav>
-
         <a href="index.html" id="a1">Flores y plantas</a>
-
         <a href="index.html" id="a2">Decoracion</a>
-
         <a href="index.html" id="a3">Muebles</a>
-
         <a href="index.html" id="a4">Juegos</a>
-
         <a href="encuesta.html" id="a5">Encuesta</a>
-        </nav>
-      </div>
-    </header>
-    <main>
+      </nav>
+    </div>
+  </header>
+  <main>
     <section>
-	     <form id="fomulario">
-          <p>Nombre: <input type="text" pattern="^[A-Za-z]{1,50}$" name="Nombre" id="Nom"></p>
-          <p>Apellido: <input type="text" pattern="^[A-Za-z]{1,50}$" name="Apellido" id="Ape"></p>
-          <p>Fecha de Nacimiento: <input type="date" name="Fecha" id="Fdn"></p>
-		      <p>Sexo: <input type="radio" name="sexo" value="Hombre" id="Sexo"> Hombre
-                   <input type="radio" name="sexo" value="Mujer"  id="Sexo">  Mujer</p>
+      <form id="fomulario">
+        <p>Nombre: <input type="text" pattern="^[A-Za-z]{1,50}$" name="Nombre" id="Nom"></p>
+        <p>Apellido: <input type="text" pattern="^[A-Za-z]{1,50}$" name="Apellido" id="Ape"></p>
+        <p>Fecha de Nacimiento: <input type="date" name="Fecha" id="Fdn"></p>
+        <p>Sexo: <input type="radio" name="sexo" value="Hombre" id="Sexo"> Hombre
+          <input type="radio" name="sexo" value="Mujer"  id="Sexo">  Mujer</p>
           <P>Valoracion: <input type="radio" name="Valoracion" value="Lamentable" id="Val"> Lamentable
-		                     <input type="radio" name="Valoracion" value="Mala"  id="Val">  Mala
-						             <input type="radio" name="Valoracion" value="Podria ser mejor" id="Val"> Podria ser mejor
-		                     <input type="radio" name="Valoracion" value="Buena"  id="Val">  Buena
-		                     <input type="radio" name="Valoracion" value="Me encanto"  id="Val">  Me encantó</p>
-		      <p>Comentarios: <textarea  name="textArea" rows="5" cols="40" id="Com"></textarea></p>
-          <input type="button"  value="Enviar" id="enviar" onclick="validarForm()">
-          <input type="button" value="Cancelar" onclick="Cancel()">
-          <input type="reset" id="res">
-		  <div id="mensaje"> <h2>Gracias por completar la encuesta<h2></div>
-        </form>
-     </section>
-	 <aside>
-	</aside>
-	 </main>
-  <footer> Aplicaciones moviles 22/08/2018 </footer>
-   </body>
-</html>
+            <input type="radio" name="Valoracion" value="Mala"  id="Val">  Mala
+            <input type="radio" name="Valoracion" value="Podria ser mejor" id="Val"> Podria ser mejor
+            <input type="radio" name="Valoracion" value="Buena"  id="Val">  Buena
+            <input type="radio" name="Valoracion" value="Me encanto"  id="Val">  Me encantó</p>
+            <p>Comentarios: <textarea  name="textArea" rows="5" cols="40" id="Com"></textarea></p>
+            <input type="button"  value="Enviar" id="enviar" onclick="validarForm()">
+            <input type="button" value="Cancelar" onclick="Cancel()">
+            <input type="reset" id="res">
+            <div id="mensaje"> <h2>Gracias por completar la encuesta<h2></div>
+            </form>
+          </section>
+          <aside>
+          </aside>
+        </main>
+        <footer> Aplicaciones moviles 22/08/2018 </footer>
+      </body>
+      </html>

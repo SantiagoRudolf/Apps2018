@@ -1,152 +1,122 @@
 <!DOCTYPE HTML>
 <html>
-  <head>
-    <link href="css/Style.css" rel="stylesheet" type="text/css">
-	    <script type="text/javascript" src="Script.js"></script>
-		<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
-		<script type="text/javascript" src="jquery-3.3.1.js"></script>
-		
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Apps Moviles </title>
-  </head>
-  <body>
-    <header id="header">
-      <div class="imgh1">
-        <a href="index.html"><img id="imagen" src="utnlogo.jpg" alt="logo"></a>
-      <br>
-
-      <h1> Flor de Jardin </h1>
+<head>
+  <link href="css/Style.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="Script.js"></script>
+  <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="jquery-3.3.1.js"></script>
+  <script>
+  $(document).ready(function(){
+         $("#toggle").click(function(){
+             $("#esconder").toggle();
+         });
+     });
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Apps Moviles </title>
+</head>
+<body>
+  <header id="header">
+    <div class="imgh1">
+      <a href="index.html"><img id="imagen" src="utnlogo.jpg" alt="logo"></a>
+      <br><h1> Flor de Jardin </h1>
     </div>
-      <div class="wrapper">
+    <div class="wrapper">
       <nav>
-
         <a href="#s1" id="a1">Flores y plantas</a>
-
         <a href="#s2" id="a2">Decoracion</a>
-
         <a href="#s3" id="a3">Muebles</a>
-
         <a href="#s4" id="a4">Juegos</a>
-
         <a href="encuesta.html" id="a5">Encuesta</a>
-		
-		 <a href="Contacto.html" id="a6">Contacto</a>
-        </nav>
-      </div>
-    </header>
-    <main>
-
+        <a href="Contacto.html" id="a6">Contacto</a>
+      </nav>
+    </div>
+  </header>
+  <main>
     <section id="contenido">
-
-
-       <div id="s1" class="titulos">
-      <h2> Flores y plantas </h2>
+      <div id="s1" class="titulos">
+        <h2> Flores y plantas </h2>
       </div>
-
       <div class="galleryconten">
-         <div class="gallery">
-          <img src="media/Jardineria.jpg" alt="Cinque Terre" width="300" height="200" id="004"onclick="agregar('004')">
-          <div class="desc">Juego macetas</div>
-         </div>
-
         <div class="gallery">
-        <img src="media/Jardineria1.jpg" alt="Forest" width="300" height="200" id="005"onclick="agregar('005')">
-        <div class="desc">Macetas con flores</div>
+          <img id="toggle" src="media/Jardineria.jpg" alt="Cinque Terre" width="300" height="200" id="1" onclick="agregar('1')">
+          <div id="esconder" class="desc">Juego macetas</div>
         </div>
-
         <div class="gallery">
-        <img src="media/Jardineria2.jpg" alt="Northern Lights" width="300" height="200" id="006"onclick="agregar('006')">
-
-        <div class="desc">Invernadero de jardin</div>
+          <img src="media/Jardineria1.jpg" alt="Forest" width="300" height="200" id="2" onclick="agregar('2')">
+          <div class="desc">Macetas con flores</div>
         </div>
-
-
-
-      <div class="gallery">
-      <img src="media/Jardineria3.jpg" alt="Cinque Terre" width="300" height="200"  id="007"onclick="agregar('007')">
-      <div class="desc">Semillas varias</div>
+        <div class="gallery">
+          <img src="media/Jardineria2.jpg" alt="Northern Lights" width="300" height="200" id="3" onclick="agregar('3')">
+          <div class="desc">Invernadero de jardin</div>
+        </div>
+        <div class="gallery">
+          <img src="media/Jardineria3.jpg" alt="Cinque Terre" width="300" height="200"  id="4" onclick="agregar('4')">
+          <div class="desc">Semillas varias</div>
+        </div>
       </div>
-  </div>
-  <div id="s2" class="titulos">
-  <h2 style="text-align:center"> Decoracion</h2>
-  </div>
 
-<div class="galleryconten">
-  <div class="gallery">
-   <img src="media/Gñomo.jpg" alt="Cinque Terre" width="300" height="200"  id="001"onclick="agregar('001')">
-  <div class="desc">Gñomo</div>
-  </div>
+      <div id="s2" class="titulos">
+        <h2 style="text-align:center"> Decoracion</h2>
+      </div>
+      <div class="galleryconten">
+        <div class="gallery">
+          <img src="media/Gñomo.jpg" alt="Cinque Terre" width="300" height="200"  id="5" onclick="agregar('5')">
+          <div class="desc">Gñomo</div>
+        </div>
+        <div class="gallery">
+          <img src="media/Estatua1.jpg" alt="Forest" width="300" height="200"  id="6" onclick="agregar('6')">
+          <div class="desc">Estatua de leon</div>
+        </div>
+        <div class="gallery">
+          <img src="media/Fuente.jpg" alt="Northern Lights" width="300" height="200" id="7" onclick="agregar('7')">
+          <div class="desc">Fuente de jardin</div>
+        </div>
+      </div>
 
-  <div class="gallery">
-   <img src="media/Estatua1.jpg" alt="Forest" width="300" height="200"  id="002"onclick="agregar('002')">
-  <div class="desc">Estatua de leon</div>
-  </div>
-
-  <div class="gallery">
-    <img src="media/banquetas3.jpg" alt="Northern Lights" width="300" height="200" id="003"onclick="agregar('003')">
- <div class="desc">Fuente de jardin</div>
-</div>
-</div>
-
-
-        <div id="s3" class="titulos">
+      <div id="s3" class="titulos">
         <h2> Muebles </h2>
-        </div>
-
-
-   <div class="galleryconten">
-
-      <div class="gallery">
-      <img src="media/banquetas.jpg" alt="Cinque Terre" width="300" height="200"  id="008"onclick="agregar('008')">
-      <div class="desc">Banquetas de plastico blanca</div>
       </div>
-
-    <div class="gallery">
-    <img src="media/banquetas1.jpg" alt="Forest" width="300" height="200"  id="009"onclick="agregar('009')">
-    <div class="desc">Silla de madera para exterior</div>
-    </div>
-
-    <div class="gallery">
-    <img src="media/banquetas2.jpg" alt="Northern Lights" width="300" height="200"  id="010"onclick="agregar('010')">
-
-    <div class="desc">Banquetas de plastico negra</div>
-    </div>
-
-
-
-    <div class="gallery">
-    <img src="media/banquetas3.jpg" alt="Cinque Terre" width="300" height="200"  id="011"onclick="agregar('011')">
-    <div class="desc">Silla plegable</div>
-    </div>
-  </div>
-
-
+      <div class="galleryconten">
+        <div class="gallery">
+          <img src="media/Banquetas.jpg" alt="Cinque Terre" width="300" height="200"  id="8" onclick="agregar('8')">
+          <div class="desc">Banquetas de plastico blanca</div>
+        </div>
+        <div class="gallery">
+          <img src="media/Banquetas1.jpg" alt="Forest" width="300" height="200"  id="9"onclick="agregar('9')">
+          <div class="desc">Silla de madera para exterior</div>
+        </div>
+        <div class="gallery">
+          <img src="media/Banquetas2.jpg" alt="Northern Lights" width="300" height="200"  id="10" onclick="agregar('10')">
+          <div class="desc">Banquetas de plastico negra</div>
+        </div>
+        <div class="gallery">
+          <img src="media/Banquetas3.jpg" alt="Cinque Terre" width="300" height="200"  id="11" onclick="agregar('11')">
+          <div class="desc">Silla plegable</div>
+        </div>
+      </div>
 
       <div id="s4" class="titulos">
         <h2> Juegos </h2>
       </div>
-
-    <div class="galleryconten">
-      <div class="gallery">
-       <img src="media/ToboganHamacas.jpg" alt="Cinque Terre" width="300" height="200"  id="012"onclick="agregar('012')">
-       <div class="desc">Juego de tobogan y hamacas</div>
+      <div class="galleryconten">
+        <div class="gallery">
+          <img src="media/ToboganHamacas.jpg" alt="Cinque Terre" width="300" height="200"  id="12" onclick="agregar('12')">
+          <div class="desc">Juego de tobogan y hamacas</div>
+        </div>
+        <div class="gallery">
+          <img src="media/CamaElastica.jpg" alt="Forest" width="300" height="200"  id="13" onclick="agregar('13')">
+          <div class="desc">Cama elastica de jardin</div>
+        </div>
       </div>
-
-    <div class="gallery">
-    <img src="media/CamaElastica.jpg" alt="Forest" width="300" height="200"  id="013"onclick="agregar('013')">
-    <div class="desc">Cama elastica de jardin</div>
-    </div>
-  </div>
-
-        <br>
+      <br>
     </section>
-	<aside>
-            <h3>Carrito de Compras</h3>
-           <h3 id= "total"> </h3>
-
-	</aside>
+    <aside>
+      <h3>Carrito de Compras</h3>
+      <h3 id= "total"> </h3>
+    </aside>
   </main>
   <footer> Aplicaciones moviles 22/08/2018 </footer>
-  </body>
+</body>
 </html>

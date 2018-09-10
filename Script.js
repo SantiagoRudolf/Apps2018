@@ -11,7 +11,7 @@ var encontrado=false;
 while((i<canasto.length)&& (!encontrado))
 {
     if(canasto[i]==id)
-    {	
+    {
     encontrado=true;
     }
     else
@@ -19,8 +19,8 @@ while((i<canasto.length)&& (!encontrado))
     i++;
     }
 }
-if(encontrado){	
-document.getElementById(id).style.opacity ="1";  
+if(encontrado){
+document.getElementById(id).style.opacity ="1";
  canasto.splice(i,1);
 
 }
@@ -28,11 +28,11 @@ else{
 	document.getElementById(id).style.opacity ="0.5";
     var producto=cacheProductos[id];
     canasto.push(id);
-	
+
 }
  var tot = canasto.length * 50 ;
- 
-window.parent.document.getElementById('total').innerHTML =" Precio por articulo: $50 <br> <br> Total:$"+ tot; 
+
+window.parent.document.getElementById('total').innerHTML =" Precio por articulo: $50 <br> <br> Total:$"+ tot;
 
 }
 
@@ -91,43 +91,51 @@ function validarForm()
 
 
 var map;
- 
+
  function initialize() {
    var punto = new google.maps.LatLng( -34.906377299999996, -57.925213899999996); //ubicación Flor de jardin
    var myOptions = {
-     zoom: 18, 
+     zoom: 18,
      center: punto,
    }
      map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
  }
-  
- 
-  
+
+
+
  function pedirPosicion(pos) {
    var centro = new google.maps.LatLng(pos.coords.latitude,pos.coords.longitude);
-   map.setCenter(centro); 
-   map.setMapTypeId(google.maps.MapTypeId.ROADMAP); 
+   map.setCenter(centro);
+   map.setMapTypeId(google.maps.MapTypeId.ROADMAP);
   alert("¡Hola! Estas en : "+pos.coords.latitude+ ","+pos.coords.longitude+" Rango de localización de +/- "+pos.coords.accuracy+" metros");
 }
- 
+
 function geolocalizame(){
 navigator.geolocation.getCurrentPosition(pedirPosicion);
  }
- 
+
   $(document).ready(function(){
 	 $("#res").click(function(){
- $("#mensaje").hiden(); })})		 
+ $("#mensaje").hiden(); })})
 
- 
+
  */
- 
- $(document).ready(function(){
 
+
+$(document).ready(function(){
   $("#mensaje").hide();
  });
- 
- $(document).ready(function(){
+
+$(document).ready(function(){
 	 $("#enviar").click(function(){
- $("#mensaje").show(1);
-   setTimeout(function() {
- $("#mensaje").hide();},5000);})})
+     $("#mensaje").show(1);
+     setTimeout(function() {
+       $("#mensaje").hide();},5000);})
+     }
+   )
+
+$(document).ready(function(){
+       $("#toggle").click(function(){
+           $("#esconder").toggle();
+       });
+   });
