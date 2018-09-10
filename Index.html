@@ -6,7 +6,6 @@
 		<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
 		<script type="text/javascript" src="jquery-3.3.1t.js"></script>
 		<script type="text/javascript" src="Script.js"></script>
-		
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Apps Moviles </title>
@@ -15,12 +14,10 @@
     <header id="header">
       <div class="imgh1">
         <a href="index.html"><img id="imagen" src="utnlogo.jpg" alt="logo"></a>
-      <br>
-
-      <h1> Flor de Jardin </h1>
+      <br><h1> Flor de Jardin </h1>
     </div>
     <div class="wrapper">
-      <nav>
+      <nav display="none">
         <a href="#s1" id="a1">Flores y plantas</a>
         <a href="#s2" id="a2">Decoracion</a>
         <a href="#s3" id="a3">Muebles</a>
@@ -37,7 +34,7 @@
       </div>
       <div class="galleryconten">
         <div class="gallery">
-          <img id="toggle" src="media/Jardineria.jpg" alt="Cinque Terre" width="300" height="200" id="1" onclick="agregar('1')">
+          <img src="media/Jardineria.jpg" alt="Cinque Terre" width="300" height="200" id="1" onclick="agregar('1')">
           <div id="esconder" class="desc">Juego macetas</div>
         </div>
         <div class="gallery">
@@ -110,7 +107,7 @@
       <br>
     </section>
     <aside>
-      <h3>Carrito de Compras</h3>
+      <h3 id="ver">Carrito de Compras (Expandir)</h3>
       <h3 id= "total"> </h3>
     </aside>
   </main>
