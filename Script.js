@@ -1,4 +1,44 @@
-/*window.onload = function() {
+$(document).ready(function(){
+                $("#enviar").click(function(){
+        
+                var nombre = $("#Nom").val();
+                var fdn = $("#Fdn").val();
+                var Ape = $("#Ape").val();
+ 
+                if(nombre == ""){
+                    alert("el nombre no puede estar vacio");
+                    return false;
+                }
+                else{
+                     if(Ape == ""){
+                    alert("el apellido no puede estar vacio");
+                    return false;
+                }
+ 
+              
+                  
+                    else{
+ 
+                          if(fdn == 0){
+                    alert("la fecha no puede estar vacia");
+                    return false;
+                }
+				else{
+                $("input[type=checkbox]:checked").each(function() { 
+//cada elemento seleccionado
+alert($(this).val());
+});
+               					  
+				}
+                     
+                    }
+                }
+ 
+            });//click
+        });//ready 
+ 
+ 
+ /*window.onload = function() {
 	window.parent.document.getElementById('total').innerHTML =" Precio por articulo: $50 <br><br>Total:$0" ; }
 
 var cacheProductos=[];
@@ -86,7 +126,16 @@ function validarForm()
      alert('El campo: Valoracion, debe tener contener un valor');
      return false;
    } alert('Nombre: ' + Nom + '\n' + 'Apellido: ' + Ape + '\n' +  'Nacimiento: ' + Fecha + '\n' +  'Sexo: ' + sexo + '\n' +  'Valoracion: ' + Val);
+      $(document).ready(function(){
 
+  $("#mensaje").hide();
+ });
+ 
+ $(document).ready(function(){
+	 $("#enviar").click(function(){
+ $("#mensaje").show(1);
+   setTimeout(function() {
+ $("#mensaje").hide();},5000);})})
 }
 
 
@@ -119,7 +168,7 @@ navigator.geolocation.getCurrentPosition(pedirPosicion);
  $("#mensaje").hiden(); })})		 
 
  
- */
+ 
  
  $(document).ready(function(){
 
@@ -130,4 +179,5 @@ navigator.geolocation.getCurrentPosition(pedirPosicion);
 	 $("#enviar").click(function(){
  $("#mensaje").show(1);
    setTimeout(function() {
- $("#mensaje").hide();},5000);})})
+ $("#mensaje").hide();},5000);})}) */
+ 
